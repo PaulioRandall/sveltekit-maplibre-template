@@ -1,4 +1,4 @@
-# Sveltekit Minimalist Template
+# Sveltekit MapLibre Template
 
 A minimalist [MapLibre](https://maplibre.org/) [Sveltekit](https://kit.svelte.dev/) template with [Prettier](https://prettier.io/) and a few super simple components to get you started.
 
