@@ -1,6 +1,6 @@
 # Sveltekit Minimalist Template
 
-A minimalist [Sveltekit](https://kit.svelte.dev/) template with only [Prettier](https://prettier.io/) and a few sparse components and pages included.
+A minimalist [MapLibre](https://maplibre.org/) [Sveltekit](https://kit.svelte.dev/) template with [Prettier](https://prettier.io/) and a few super simple components to get you started.
 
 ## Getting started
 
@@ -9,8 +9,8 @@ A minimalist [Sveltekit](https://kit.svelte.dev/) template with only [Prettier](
 2. Fork then clone the repo:
 
 ```bash
-git clone https://github.com/PaulioRandall/sveltekit-minimalist-template.git
-cd sveltekit-minimalist-template
+git clone https://github.com/PaulioRandall/sveltekit-maplibre-template.git
+cd sveltekit-maplibre-template
 ```
 
 3. Update project name in `package.json` with your project name.
@@ -76,7 +76,7 @@ npm run clean
 #### Production build warning
 
 ```bash
-	Could not detect a supported production environment...
+Could not detect a supported production environment...
 ```
 
 Don't worry if you get a build warning like the one above.

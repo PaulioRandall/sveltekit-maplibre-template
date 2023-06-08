@@ -1,8 +1,5 @@
 <script>
 	import { page } from '$app/stores'
-
-	import PageHeading from '$lib/PageHeading.svelte'
-	import Paragraph from '$lib/Paragraph.svelte'
 </script>
 
 <svelte:head>
@@ -10,8 +7,5 @@
 </svelte:head>
 
 <main>
-	<PageHeading>{$page.status}</PageHeading>
-	<Paragraph>
-		{$page.error.message}
-	</Paragraph>
+	{$page.status} - {$page.error.message}
 </main>

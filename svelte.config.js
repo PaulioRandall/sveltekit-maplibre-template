@@ -6,6 +6,8 @@ export default {
 		adapter: adapter(),
 		alias: {
 			$routes: path.resolve('./src/routes'),
+			$state: path.resolve('./src/lib/state.js'),
+			$util: path.resolve('./src/lib/util.js'),
 		},
 	},
 }

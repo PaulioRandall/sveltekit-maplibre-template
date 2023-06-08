@@ -1,15 +1,36 @@
 <script>
-	import PageHeading from '$lib/PageHeading.svelte'
-	import Paragraph from '$lib/Paragraph.svelte'
+	import MapLibre from '$lib/MapLibre.svelte'
+	import Menu from '$lib/Menu.svelte'
+	import { map, menuIsOpen } from '$state'
 
-	const title = 'Minimalist Sveltekit Template'
+	$: if ($map) {
+		console.log('Map created')
+	}
+
+	$: console.log('Menu open:', $menuIsOpen)
 </script>
 
 <svelte:head>
-	<title>{title}</title>
+	<title>Maplibre Sveltekit Template</title>
 </svelte:head>
 
-<main>
-	<PageHeading>{title}</PageHeading>
-	<Paragraph>A paragraph...</Paragraph>
+<main class="main">
+	<MapLibre
+		options={{
+			style: 'https://demotiles.maplibre.org/style.json',
+			center: [0, 0],
+			zoom: 1,
+		}} />
+	<Menu />
 </main>
+
+<style>
+	.main {
+		position: relative;
+
+		width: 100vw;
+		height: 100vh;
+
+		overflow: hidden;
+	}
+</style>
