@@ -25,7 +25,15 @@
 
 <style>
 	.container {
-		width: 100%;
-		height: 100%;
+		width: var(--map-width);
+		height: var(--map-height);
+	}
+
+	@media (min-width: 800px) {
+		.container {
+			margin-left: var(--map-width-offset-desktop);
+			width: var(--map-width-desktop);
+			height: var(--map-height-desktop);
+		}
 	}
 </style>

@@ -1,16 +1,10 @@
 <script>
 	import { menuIsOpen, menuSize, menuHoodSize } from '$state'
-	import { toCSS, px } from '$util'
 
 	const toggle = () => menuIsOpen.update((isOpen) => !isOpen)
-
-	const style = toCSS({
-		'--menu-toggle-pos': px(menuSize - menuHoodSize),
-		'--menu-toggle-size': px(menuHoodSize),
-	})
 </script>
 
-<div {style} class="menu-toggle" on:click={toggle} on:keypress>
+<div class="menu-toggle" on:click={toggle} on:keypress>
 	___<br />___<br />___
 </div>
 
@@ -34,7 +28,7 @@
 
 	@media (min-width: 800px) {
 		.menu-toggle {
-			left: var(--menu-toggle-pos);
+			left: var(--menu-toggle-left);
 		}
 	}
 </style>

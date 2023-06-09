@@ -1,7 +1,7 @@
 <script>
 	import MapLibre from '$lib/MapLibre.svelte'
 	import Menu from '$lib/Menu.svelte'
-	import { map, menuIsOpen } from '$state'
+	import { map, menuIsOpen, cssVars } from '$state'
 
 	$: if ($map) {
 		console.log('Map created')
@@ -14,7 +14,7 @@
 	<title>Maplibre Sveltekit Template</title>
 </svelte:head>
 
-<main class="main">
+<main style={cssVars} class="main">
 	<MapLibre
 		options={{
 			style: 'https://demotiles.maplibre.org/style.json',

@@ -1,17 +1,9 @@
 <script>
 	import { menuIsOpen, menuSize, menuHoodSize } from '$state'
-	import { toCSS, px } from '$util'
-
 	import MenuToggle from './MenuToggle.svelte'
-
-	const style = toCSS({
-		'--menu-size': px(menuSize),
-		'--menu-closed': px(0 - menuSize + menuHoodSize),
-		'--menu-hood-size': px(menuHoodSize),
-	})
 </script>
 
-<section {style} class="menu" class:open={$menuIsOpen}>
+<section class="menu" class:open={$menuIsOpen}>
 	<MenuToggle />
 </section>
 
@@ -44,7 +36,7 @@
 		}
 
 		.open {
-			bottom: unset;
+			top: 0;
 			left: 0;
 		}
 	}
